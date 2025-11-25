@@ -11,6 +11,7 @@ const express = require('express');         // Framework para construir el servi
 const morgan = require('morgan');           // Middleware para mostrar las peticiones HTTP por consola
 const cors = require('cors');             // Middleware para permitir solicitudes desde otro origen (CORS)
 const app = express();                      // Se crea la instancia principal del servidor
+const { mongoose } = require('./database'); 
 
 // -----------------------------------
 // Configuraciones del servidor
